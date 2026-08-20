@@ -6,5 +6,5 @@ import react from "@vitejs/plugin-react";
 // Якщо сайт розгортається на *.github.io (репозиторій-профіль), онови на "/".
 export default defineConfig({
   plugins: [react()],
-  base: "/weather-song-arena/",
+  base: "/model_comparison/",
 });
