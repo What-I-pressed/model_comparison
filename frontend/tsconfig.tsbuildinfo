@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/types.ts","./src/vite-env.d.ts","./src/components/Leaderboard.tsx","./src/components/ScoreReadout.tsx","./src/components/SongCard.tsx","./src/components/WeatherChip.tsx","./src/components/WeightSliders.tsx","./src/lib/scoring.ts"],"version":"5.9.3"}

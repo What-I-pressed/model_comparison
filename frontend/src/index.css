@@ -1,0 +1,76 @@
+:root {
+  /* Палітра: метеостанція вночі -- темна панель приладів, тепла бурштинова
+     стрілка (сонце/пріоритет), приморожена небесно-синя (вторинний акцент),
+     і два функціональні кольори для оцінок -- м'який "врожайний" зелений
+     (добре) і цегляно-червоний (погано). Пергаментний папір -- лише для
+     карток із текстом пісні, як аркуш з блокнота пісняра. */
+  --ink: #12161d;
+  --panel: #1b2129;
+  --panel-raised: #232b35;
+  --line: #333d49;
+  --paper: #f3ecda;
+  --paper-line: #d8cba9;
+  --amber: #e2a63b;
+  --amber-dim: #7a5a25;
+  --sky: #6d9bbd;
+  --frost: #a9b7c4;
+  --frost-dim: #6b7684;
+  --good: #7fa66f;
+  --bad: #c06a5a;
+
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-lyrics: "IBM Plex Serif", Georgia, serif;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--ink);
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(226, 166, 59, 0.07), transparent 40%),
+    radial-gradient(circle at 85% 10%, rgba(109, 155, 189, 0.08), transparent 45%);
+  color: var(--frost);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--sky);
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--amber-dim);
+  color: var(--paper);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
